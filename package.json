@@ -1,0 +1,39 @@
+{
+  "name": "gulp-inkblot",
+  "version": "0.0.0",
+  "description": "Gulp Inkblot plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajthor/gulp-inkblot.git"
+  },
+  "author": "ajthor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajthor/gulp-inkblot/issues"
+  },
+  "homepage": "https://github.com/ajthor/gulp-inkblot",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "test",
+    "testing",
+    "mocha",
+    "unit"
+  ],
+  "dependencies": {
+    "gulp-util": "~2.2.0",
+    "through2": "~0.4.0",
+    "mocha": "~1"
+  },
+  "devDependencies": {
+    "gulp-util": "^2.2.16",
+    "mocha": "^1.20.1",
+    "through2": "^0.4.2"
+  }
+}
