@@ -6,8 +6,13 @@ var through = require('through2');
 
 var inkblot = require('inkblot');
 
+// describe inkblot function
+	it('should load', function () {});
+	it('should scaffold a demo file', function () {});
+	it('should extract unit tests from a file', function () {});
+// end
 module.exports = function (options) {
-	var inkblot = new inkblot(options);
+	var ib = new inkblot(options);
 
 	return through.obj(function (file, enc, callback) {
 		if (file.isNull()) {
@@ -24,7 +29,7 @@ module.exports = function (options) {
 
 		try {
 
-			inkblot.run(file);
+			ib.run(file);
 
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-inkblot', 'Streaming not supported.'));
