@@ -1,6 +1,6 @@
 {
   "name": "gulp-inkblot",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Gulp Inkblot plugin.",
   "main": "index.js",
   "scripts": {
@@ -27,11 +27,7 @@
     "unit"
   ],
   "dependencies": {
-    "gulp-util": "~2.2.0",
-    "through2": "~0.4.0",
-    "mocha": "~1"
-  },
-  "devDependencies": {
+    "inkblot": "git://github.com/ajthor/inkblot",
     "gulp-util": "^2.2.16",
     "mocha": "^1.20.1",
     "through2": "^0.4.2"
