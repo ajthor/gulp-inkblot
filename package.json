@@ -26,11 +26,7 @@
     "mocha",
     "unit"
   ],
-  "dependencies": {
-    "gulp-util": "~2.2.0",
-    "through2": "~0.4.0",
-    "mocha": "~1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp-util": "^2.2.16",
     "mocha": "^1.20.1",
