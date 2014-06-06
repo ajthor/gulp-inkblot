@@ -29,7 +29,9 @@ describe('exported object', function() {
         it('should scaffold a demo file', function() {});
 
         it('should extract unit tests from a file', function() {});
+
         it('should delete unit tests from a file', function() {});
+
         it('should create JSON file if proper option is set', function() {});
 
     });
