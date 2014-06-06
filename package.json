@@ -1,6 +1,6 @@
 {
   "name": "gulp-inkblot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gulp Inkblot plugin.",
   "main": "index.js",
   "scripts": {
