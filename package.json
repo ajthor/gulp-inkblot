@@ -26,8 +26,8 @@
     "mocha",
     "unit"
   ],
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
+    "inkblot": "git://github.com/ajthor/inkblot",
     "gulp-util": "^2.2.16",
     "mocha": "^1.20.1",
     "through2": "^0.4.2"
