@@ -31,7 +31,18 @@ module.exports = function (options) {
 
 		try {
 			(function () {
-				ib.run(file.path);
+				var ext = path.extname(file.path);
+				var base = path.basename(file.path, ext);
+
+				ib.compile({
+					cwd: file.cwd,
+					path: file.path,
+					ext: ext,
+					base: base,
+					name: path.basename(file.path),
+					spec: path.join(ib.options.out, base + '.spec' + ext),
+					_contents: file._contents
+				});
 
 			})();
 
