@@ -6,8 +6,15 @@ var through = require('through2');
 
 var inkblot = require('inkblot');
 
+// describe indexJs function
+	it('should load', function () {});
+	it('should scaffold a demo file', function () {});
+	it('should extract unit tests from a file', function () {});
+	it('should delete unit tests from a file', function () {});
+	it('should create JSON file if proper option is set', function () {});
+// end
 module.exports = function (options) {
-	var inkblot = new inkblot(options);
+	var ib = new inkblot(options);
 
 	return through.obj(function (file, enc, callback) {
 		if (file.isNull()) {
@@ -23,8 +30,10 @@ module.exports = function (options) {
 		options = options || {};
 
 		try {
+			(function () {
+				ib.run(file.path);
 
-			inkblot.run(file);
+			})();
 
 		} catch (err) {
 			this.emit('error', new gutil.PluginError('gulp-inkblot', 'Streaming not supported.'));
