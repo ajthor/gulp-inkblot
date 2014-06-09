@@ -1,5 +1,7 @@
 'use strict';
 
+var _ = require('underscore');
+
 var path = require('path');
 var gutil = require('gulp-util');
 var through = require('through2');
@@ -14,6 +16,14 @@ var inkblot = require('inkblot');
 	it('should create JSON file if proper option is set', function () {});
 // end
 module.exports = function (options) {
+	options = _.defaults((options || {}), {
+		autoReplace: true,
+		autoRemove: false,
+		createJSON: false,
+		enablePrompts: false,
+		silent: false
+	});
+	
 	var ib = new inkblot(options);
 
 	return through.obj(function (file, enc, callback) {

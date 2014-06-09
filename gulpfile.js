@@ -27,7 +27,7 @@ gulp.task('test', function () {
 });
 
 gulp.task('watch', function () {
-	gulp.watch(['index.js'], ['lint', 'inkblot', 'test']);
+	gulp.watch(['index.js'], ['lint', 'inkblot']);
 	gulp.watch(['./test/**/*.spec.js'], ['test']);
 });
 

@@ -27,9 +27,10 @@
     "unit"
   ],
   "dependencies": {
-    "inkblot": "git://github.com/ajthor/inkblot",
     "gulp-util": "^2.2.16",
-    "through2": "^0.4.2"
+    "inkblot": "git://github.com/ajthor/inkblot",
+    "through2": "^0.4.2",
+    "underscore": "^1.6.0"
   },
   "devDependencies": {
     "chai": "^1.9.1",
